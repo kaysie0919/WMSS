@@ -1,0 +1,45 @@
+        body{
+            background-color: black;
+        }
+        
+        * {
+            box-sizing: border-box;
+            
+        
+    }
+        
+        
+        a{
+            display: block;
+            padding: 34px 20px;
+            line-height: 30px;
+            color: #191919;
+            text-decoration: none;
+            font-size: 34px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid white;
+            margin: 10px;
+            margin-left: 25%;
+            margin-right: 25%;
+    }
+        
+        #gc{
+            background-color: darkgreen;
+            
+        }
+        
+        #cs{
+            background-color: blueviolet;
+
+        }
+        
+        #gtf{
+            background-color: brown;
+           
+        }
+        
+        #home{
+            background-color:dodgerblue;
+            
+        }

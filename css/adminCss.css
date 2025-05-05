@@ -1,0 +1,52 @@
+body{
+            background-color: black;  
+        }
+* {
+            box-sizing: border-box;  
+            border-radius: 8px; 
+    }
+        
+        ul {
+            list-style-type: none;
+    }
+        
+        a{
+            display: block;
+            padding: 34px 20px;
+            line-height: 20px;
+            color: #191919;
+            text-decoration: none;
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid white;
+            margin-left: 15%;
+            margin-right: 15%;
+    
+    }
+        
+        #name{
+            background-color: aqua;
+            font-size: 28px;
+            
+        }
+        
+        #newpost{
+            background-color: blueviolet;
+
+        }
+        
+        #delpost{
+            background-color: brown;
+           
+        }
+        
+        #newgc{
+            background-color:dodgerblue;
+            
+        }
+
+        #newcs{
+            background-color:goldenrod;
+            
+        }
