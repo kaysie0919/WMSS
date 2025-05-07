@@ -141,6 +141,10 @@ if(!$_SESSION['id'])
                         <input type="text" class="form-control" placeholder="User Name" name="uname">
                     </div>
                     <div class="form-group">
+                        <label>Email :</label>
+                        <input type="email" class="form-control" placeholder="Email" name="email" required>
+                    </div>
+                    <div class="form-group">
                         <label>Password :</label>
                         <input type="password" class="form-control" placeholder="Password" name="pass">
                     </div>

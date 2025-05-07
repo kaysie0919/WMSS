@@ -82,7 +82,7 @@
         <ul class="ps-3 text-start">
           <li><strong>Waste Reporting:</strong> Residents can easily report waste or garbage issues in their neighborhood through our user-friendly web interface.</li>
           <li><strong>Real-Time Tracking:</strong> Track the status of complaints in real-time and see if issues are resolved.</li>
-          <li><strong>Environmental Education:</strong> Discover ideas and initiatives for recycling and sustainable waste management in Barangay 177.</li>
+          <li><strong>Environmental Education:</strong> Discover ideas and initiatives for recycling and sustainable waste management in District III.</li>
         </ul>
       </div>
       <div class="col-lg-6 col-md-12 text-center text-md-start">

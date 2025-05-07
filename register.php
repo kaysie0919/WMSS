@@ -17,16 +17,22 @@
         <h1>User Registration</h1>
         <div class="main-agileinfo">
             <div class="agileits-top">
-                <form id="myform" action="add/add_green_task.php" method="post" enctype="multipart/form-data">
-                    <input class="text" type="text" name="F_Name" placeholder="First Name" required="">
-                    <br>
-                    <input class="text" type="text" name="L_Name" placeholder="Last Name" required="">
-                    <br>
-                    <input class="text" type="text" name="Username" placeholder="Username" required="">
-                    <br>
-                    <input class="text w3lpass" type="password" name="cpassword" placeholder="Confirm Password" required="">
-                    <input type="submit" id="saveForm" value="SIGNUP">
-                </form>
+            <form id="myform" action="add/add_green_task.php" method="post" enctype="multipart/form-data">
+                <input class="text" type="text" name="F_Name" placeholder="First Name" required>
+                <br>
+                <input class="text" type="text" name="L_Name" placeholder="Last Name" required>
+                <br>
+                <input class="text" type="email" name="Email" placeholder="Email Address" required>
+                <br>
+                <input class="text" type="text" name="Username" placeholder="Username" required>
+                <br>
+                <input class="text w3lpass" type="password" name="password" id="password" placeholder="Password" required>
+                <br>
+                <input class="text w3lpass" type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required>
+                <br>
+                <input type="submit" id="saveForm" value="SIGNUP">
+            </form>
+
                 <p>Already have an Account? <a href="login.php"> Login Now!</a></p>
             </div>
         </div>
@@ -36,6 +42,14 @@
             $(document).ready(function(){
                 $("#myform").submit(function(event){
                     event.preventDefault(); 
+
+                    let password = $("#password").val();
+                    let cpassword = $("#cpassword").val();
+
+                    if (password !== cpassword) {
+                        $("#result").html("<span style='color:red;'>Passwords do not match.</span>");
+                        return false;
+                    }
 
                     $.post($("#myform").attr("action"), $("#myform").serialize(), function(info){
                         $("#result").html(info);
